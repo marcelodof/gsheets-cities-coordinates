@@ -1,12 +1,14 @@
 """OpenCage API."""
 import requests
 
+API_KEY = ''
+
 class Geocode():
     """Geocode API Class."""
 
     def __init__(self):
         """Init Geocode."""
-        self.key = '52a57ab29140439098915de0dcfae282'
+        self.key = API_KEY
         self.endpoint = 'https://api.opencagedata.com/geocode/v1/json'
 
     def get_coordinates(self, city):
